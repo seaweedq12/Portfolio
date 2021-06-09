@@ -1,5 +1,5 @@
 :root{
-    --darkblue: rgb(38, 40, 156);
+    --darkblue: rgb(46, 137, 179);
     --lightblue: rgb(6, 197, 255); 
 }
 
@@ -29,22 +29,26 @@ header nav{
     margin-right: 20px;
     margin-bottom: 10px;
 }
-
 header nav ul li{
     display: inline-block;
+}
+
+header nav ul li a{
     margin-right: 15px;
     color: var(--lightblue);
-    border-style: solid;
+    border-bottom: 3px solid var(--lightblue);
     padding: 5px;
-    border-top: var(--lightblue);
-    border-left: var(--lightblue);
-    border-right: var(--lightblue); 
+    
 }
 
 p{
     line-height: 1;
 }
 a{
+    text-decoration: none;
+}
+
+.info .content ul li a{
     text-decoration: none;
     color: black;
     border-bottom: 2px solid var(--darkblue) ;
@@ -55,6 +59,13 @@ a{
     background-size: 100% 100%;
     height: 150px;
     margin-bottom: 25px;
+}
+
+.avatar{
+    float: right;
+    margin-left: 3px;
+    opacity: 100%;
+    border: none;
 }
 
 main{
@@ -77,46 +88,68 @@ main section{
     margin-bottom: 1em;
 }
 
-
-
-img{
+.left-title {
+    color: rgb(0, 37, 48);
+}
+.image-border{
     border-style: solid;
     border-color: var(--lightblue);
     border-width: 5px;
 }
-
-.main-work > img{
-    width: 100%;
-    max-height: 500px;
-    margin-bottom: 1px; 
-}
-
-.sub-work img{
-    display: inline-block;
-    flex-wrap: wrap;
-    width: 100%;
-    max-height: 200px;
-}
-section ul li{
-    font-size: 1.5em;
-    margin-bottom: 3px;
-}
-.info .content ul :nth-child(2){
-    margin-left: 3em;
-    margin-right: 3em;
-}
-.info .content{
-    text-align: center;
-    
-}
 img{
+    border-style: solid;
+    border-color: var(--lightblue);
+    border-width: 5px;
     opacity: 60%;
-    
+    margin-bottom: 5px;
 }
 
 img:hover{
     opacity: 100%;
 }
+
+.main-work,.sub-work{
+    position: relative;
+}
+
+.text-block{
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background-color:var(--lightblue);
+    color: rgb(4, 63, 141);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main-work > a, .main-work a img{
+    width: 100%;
+    max-height: 500px;
+    margin-bottom: 5px; 
+}
+
+.sub-work > a,.sub-work a img{
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 200px;
+}
+
+section ul li{
+    font-size: 1.5em;
+    margin-bottom: 3px;
+}
+
+.info .content ul :nth-child(2){
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.info .content{
+    text-align: center;
+    
+}
+
 @media screen and (min-width: 768px) {
     
     section ul li{
@@ -125,8 +158,13 @@ img:hover{
     .backimage{
         height: 230px;
     }
-    .sub-work > img{
+    .sub-work {
+        display: inline-block;
+        flex-wrap: wrap;
         width: 49.6%;
+    }
+    .float-right{
+        float: right;
     }
     
 }
@@ -152,14 +190,10 @@ img:hover{
         left: -250px;
     }
     .content{
-        border-style: solid;
-        border-top:var(--darkblue);
-        border-right: var(--darkblue);
-        border-bottom: var(--darkblue);
-        padding-left:2.5em ;
-        border-color: var(--darkblue);
+        border-left: 2px solid var(--darkblue) ;
         margin-top: 0px;
         padding-top: 0px;
+        padding-left:2.5em ;
     }
 }
 @media screen and (min-width: 1350px){
