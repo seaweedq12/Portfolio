@@ -11,11 +11,10 @@ https://seaweedq12.github.io/Portfolio/
 ## Work
 
 
-1. resume linked with a google drive link with the resume on it
-![resume](./assets/images/resume.png)
+1. updated resume
 
-2. three of my work was add to the work section with link to the live page
-![worklink](./assets/images/worklink.png)
+2. new works were add
 
-3. linkedin profile updated (didn't have much things i could add)
-![linkedin](./assets/images/LinkedIn.png)
+3. nav bar and about me fixed for mobile viewing
+
+
